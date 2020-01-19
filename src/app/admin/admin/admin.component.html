@@ -1,0 +1,17 @@
+<div class="container">
+    <h3>Administrator</h3>
+</div>
+<nav>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="./content-one" routerLinkActive="active">Content One</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="./content-two" routerLinkActive="active">Content Two</a>
+        </li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>

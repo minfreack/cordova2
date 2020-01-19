@@ -1,0 +1,14 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+    <div class="form-group">
+      <label for="email">Username</label>
+      <input type="email" class="form-control" id="usuario" formControlName="usuario" placeholder="Enter username">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" formControlName="password" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div class="alert alert-danger" role="alert" *ngIf="auth">
+    Error al autenticarse. Por favor, verifica tus datos.
+  </div>
